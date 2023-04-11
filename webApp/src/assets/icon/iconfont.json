@@ -1,0 +1,72 @@
+{
+  "id": "4008162",
+  "name": "luca",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "测试",
+  "glyphs": [
+    {
+      "icon_id": "2512947",
+      "name": "fruit-icons-06",
+      "font_class": "A",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "2512948",
+      "name": "fruit-icons-08",
+      "font_class": "B",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "2512949",
+      "name": "fruit-icons-05",
+      "font_class": "C",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "6803676",
+      "name": "Slot-7",
+      "font_class": "D",
+      "unicode": "e803",
+      "unicode_decimal": 59395
+    },
+    {
+      "icon_id": "6807501",
+      "name": "Slot-7",
+      "font_class": "E",
+      "unicode": "ec5d",
+      "unicode_decimal": 60509
+    },
+    {
+      "icon_id": "9141428",
+      "name": "ico-slots",
+      "font_class": "F",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "9203226",
+      "name": "slots",
+      "font_class": "slots",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "14108119",
+      "name": "slot",
+      "font_class": "slot",
+      "unicode": "ea03",
+      "unicode_decimal": 59907
+    },
+    {
+      "icon_id": "20384669",
+      "name": "kiwi fruit",
+      "font_class": "G",
+      "unicode": "eccd",
+      "unicode_decimal": 60621
+    }
+  ]
+}
