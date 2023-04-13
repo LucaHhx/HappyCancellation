@@ -46,8 +46,8 @@ const onError = (data) => {
 const refresh = () => {
   window.starx.request("Serve.NewGame", { name: "huang", id: 1,refresh:true }, onNewGame);
 };
-const gateHost = "127.0.0.1";
-const gatePort = 8080;
+const gateHost = "192.168.64.6";
+const gatePort = 3000;
 window.starx.init(
   { host: gateHost, port: gatePort, path: "/nano" },
   function () {

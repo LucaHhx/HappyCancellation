@@ -1,4 +1,4 @@
-package serve
+package service
 
 import "github.com/LucaHhx/nano/component"
 
