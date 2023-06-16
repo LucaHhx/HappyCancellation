@@ -22,7 +22,3 @@ steps:
       - ./myapp
     ports:
       - 4321:4321
-
-  trigger:
-    branch:
-    - main
