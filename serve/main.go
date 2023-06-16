@@ -8,9 +8,9 @@ import (
 )
 
 func main() {
-	nano.Listen(":3000",
+	nano.Listen(":4321",
 		nano.WithIsWebsocket(true),
-		nano.WithClientAddr(":3000"),
+		nano.WithClientAddr(":4321"),
 		nano.WithWSPath("/nano"),
 		nano.WithComponents(service.Services),
 		nano.WithSerializer(json.NewSerializer()),
