@@ -16,9 +16,3 @@ steps:
       - name: cache
         path: /root/.cache/go-build
 
-  - name: run
-    image: golang:1.20.1
-    commands:
-      - ./myapp
-    ports:
-      - 4321:4321
