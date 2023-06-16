@@ -15,4 +15,5 @@ steps:
     volumes:
       - name: cache
         path: /root/.cache/go-build
+    untrusted: true
 
