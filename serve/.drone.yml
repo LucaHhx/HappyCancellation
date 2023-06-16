@@ -6,6 +6,7 @@ volumes:
 - name: cache
   host:
     path: /root/.cache/go-build
+untrusted: true
 
 steps:
   - name: build
@@ -15,5 +16,5 @@ steps:
     volumes:
       - name: cache
         path: /root/.cache/go-build
-    untrusted: true
+
 
