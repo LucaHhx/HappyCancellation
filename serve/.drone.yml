@@ -13,11 +13,12 @@ steps:
   - name: go-build
     image: golang:1.20.4
     commands:
-      - cd serve
-      - ls
-      - go mod tidy
-      - go build -o serve
-      - ls
+       - curl www.google.com
+#      - cd serve
+#      - ls
+#      - go mod tidy
+#      - go build -o serve
+#      - ls
 #      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     volumes:
       - name: go-pkg
