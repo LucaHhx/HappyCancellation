@@ -2,9 +2,9 @@ kind: pipeline
 name: build
 type: docker
 volumes:
-  - name: go-path
+  - name: go-pkg
     host:
-      path: /srv/go
+      path: /root/go
   - name: go-cache
     host:
       path: /root/.cache/go-build
@@ -20,8 +20,8 @@ steps:
       - ls
 #      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     volumes:
-      - name: go-path
-        path: /go
+      - name: go-pkg
+        path: /root/go
       - name: go-cache
         path: /root/.cache/go-build
 
