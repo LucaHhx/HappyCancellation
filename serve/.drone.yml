@@ -16,14 +16,14 @@ steps:
   - name: clone
     image: alpine/git
     commands:
-      - export https_proxy=http://172.19.0.1:7893 http_proxy=http://172.19.0.1:7893 all_proxy=socks5://172.19.0.1:7893
+#      - export https_proxy=http://172.19.0.1:7893 http_proxy=http://172.19.0.1:7893 all_proxy=socks5://172.19.0.1:7893
       - git clone https://github.com/LucaHhx/HappyCancellation.git
 
   - name: go-build
     image: golang:1.20.4
     commands:
-      - export https_proxy=http://172.19.0.1:7893 http_proxy=http://172.19.0.1:7893 all_proxy=socks5://172.19.0.1:7893
-      - curl www.google.com
+#      - export https_proxy=http://172.19.0.1:7893 http_proxy=http://172.19.0.1:7893 all_proxy=socks5://172.19.0.1:7893
+#      - curl www.google.com
       - cd serve
       - ls
       - go mod tidy
