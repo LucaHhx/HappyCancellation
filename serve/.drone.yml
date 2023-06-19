@@ -13,9 +13,10 @@ steps:
   - name: go-build
     image: golang:1.20.4
     commands:
-      - cd /server
-      - go mod tidy
-      - go build
+       - ls
+#      - cd /server
+#      - go mod tidy
+#      - go build
 #      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     volumes:
       - name: go-path
