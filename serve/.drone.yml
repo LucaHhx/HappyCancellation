@@ -28,3 +28,22 @@ steps:
       - name: go-save
         path: /srv/www/serve
 
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: greeting
+  commands:
+   - cd /srv/www/serve
+   - rm serve
+  volumes:
+   - name: go-save
+     path: /srv/www/serve
+
+depends_on:
+  - build
