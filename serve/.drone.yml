@@ -8,7 +8,9 @@ volumes:
   - name: go-cache
     host:
       path: /root/.cache/go-build
-
+  - name:workspace
+    host:
+      path: /srv/www/serve
 
 steps:
   - name: go-build
@@ -17,11 +19,12 @@ steps:
       - cd serve
       - go mod tidy
       - go build -o serve
-      - go env
-#      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+      - mv serve /srv/www/serve/serve
     volumes:
       - name: go-pkg
         path: /go/pkg/mod
       - name: go-cache
         path: /root/.cache/go-build
+      - name: workspace
+        path: /srv/www/serve
 
