@@ -4,7 +4,7 @@ type: docker
 volumes:
   - name: go-pkg
     host:
-      path: /root/go
+      path: /root/go/pkg/mod
   - name: go-cache
     host:
       path: /root/.cache/go-build
@@ -21,7 +21,7 @@ steps:
 #      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     volumes:
       - name: go-pkg
-        path: /go
+        path: /go/pkg/mod
       - name: go-cache
         path: /root/.cache/go-build
 
