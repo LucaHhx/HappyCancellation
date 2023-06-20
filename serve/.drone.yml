@@ -8,7 +8,7 @@ volumes:
   - name: go-cache
     host:
       path: /root/.cache/go-build
-  - name:workspace
+  - name: go-save
     host:
       path: /srv/www/serve
 
@@ -25,6 +25,6 @@ steps:
         path: /go/pkg/mod
       - name: go-cache
         path: /root/.cache/go-build
-      - name: workspace
+      - name: go-save
         path: /srv/www/serve
 
