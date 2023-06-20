@@ -45,5 +45,5 @@ steps:
    - name: go-save
      path: /srv/www/serve
 
-depends_on:
-  - build
+# depends_on:
+#   - build
