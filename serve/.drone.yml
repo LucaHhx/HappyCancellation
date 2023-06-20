@@ -27,7 +27,7 @@ steps:
         path: /root/.cache/go-build
       - name: go-save
         path: /srv/www/serve
-
+---
 kind: pipeline
 type: exec
 name: default
@@ -40,7 +40,7 @@ steps:
 - name: greeting
   commands:
    - cd /srv/www/serve
-   - rm serve
+   - ls
   volumes:
    - name: go-save
      path: /srv/www/serve
