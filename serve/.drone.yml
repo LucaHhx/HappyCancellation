@@ -21,7 +21,7 @@ steps:
 #      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     volumes:
       - name: go-pkg
-        path: /root/go
+        path: /go
       - name: go-cache
         path: /root/.cache/go-build
 
