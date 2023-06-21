@@ -41,6 +41,7 @@ steps:
   commands:
    - cd /srv/www/serve
    - ls
+   - ./serve
   volumes:
    - name: go-save
      path: /srv/www/serve
