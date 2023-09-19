@@ -7,6 +7,7 @@ import (
 	"serve/service"
 )
 
+// 服务端监听
 func main() {
 	nano.Listen(":4321",
 		nano.WithIsWebsocket(true),
